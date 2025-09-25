@@ -1,0 +1,11 @@
+#kafka_consumer.py → Listens to real-time data streams from Kafka.
+
+
+
+
+#flink_processor.py → Processes streaming data using Apache Flink.
+
+
+
+
+#db_connector.py → Connects to Cassandra and DynamoDB for storage.
