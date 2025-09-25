@@ -1,0 +1,11 @@
+#llm_wrapper.py → Interface to large language models (LLMs).
+
+
+
+
+#summary_scoring.py → Scores analyst-written summaries.
+
+
+
+
+#feedback_generator.py → Generates feedback based on evaluation.
