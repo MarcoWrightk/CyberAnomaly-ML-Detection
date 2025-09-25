@@ -1,0 +1,2 @@
+# Simulated command
+nessus scan --target docker_container --report tests/nessus_report.html
