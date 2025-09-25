@@ -1,0 +1,9 @@
+# tests/test_fuzzing.py
+from src.preprocessing.drift_detection import detect_drift
+
+def test_malformed_input():
+    malformed_data = "DROP TABLE users;"  # Simulated injection
+    try:
+        detect_drift(malformed_data)
+    except Exception as e:
+        assert "TypeError" in str(type(e))
