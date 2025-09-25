@@ -1,0 +1,21 @@
+#vae_model.py → Variational Autoencoder for anomaly detection.
+
+
+
+  
+#gan_model.py → GAN-based model for complex threat detection.
+
+
+
+  
+#rl_agent.py → Reinforcement learning agent for adaptive detection.
+
+
+
+  
+#lof_model.py → Local Outlier Factor implementation.
+
+
+
+  
+#isolation_forest.py → Isolation Forest for unsupervised detection.
