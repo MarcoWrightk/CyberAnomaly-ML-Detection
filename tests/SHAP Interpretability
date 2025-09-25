@@ -1,0 +1,12 @@
+# tests/test_shap_analysis.py
+
+import shap
+from sklearn.ensemble import IsolationForest
+import numpy as np
+
+def test_shap_values():
+    X = np.random.rand(100, 5)
+    model = IsolationForest().fit(X)
+    explainer = shap.Explainer(model.predict, X)
+    shap_values = explainer(X)
+    assert shap_values.values.shape == X.shape
