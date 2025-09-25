@@ -1,0 +1,9 @@
+# tests/test_mcrmse.py
+from src.evaluation.mcrmse import calculate_mcrmse
+
+def test_mcrmse_score():
+    predictions = [["The system detected a threat", "Latency was high"]]
+    references = [["A threat was detected", "High latency observed"]]
+    score = calculate_mcrmse(predictions, references)
+    assert score >= 0.0
+    assert score <= 1.0
