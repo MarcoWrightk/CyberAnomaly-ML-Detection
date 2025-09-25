@@ -1,0 +1,7 @@
+# tests/test_responder.py
+from src.response.responder import trigger_response
+
+def test_response_trigger():
+    anomaly_score = 0.95
+    action = trigger_response(anomaly_score)
+    assert action in ["alert", "block", "log"]
